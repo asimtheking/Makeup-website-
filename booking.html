@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - Makeup Artist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Makeup Artist</h1>
+      <nav>
+        <a href="index.html" class="px-4 hover:text-gold-500">Home</a>
+        <a href="about.html" class="px-4 hover:text-gold-500">About</a>
+        <a href="services.html" class="px-4 hover:text-gold-500">Services</a>
+        <a href="portfolio.html" class="px-4 hover:text-gold-500">Portfolio</a>
+        <a href="testimonials.html" class="px-4 hover:text-gold-500">Testimonials</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Booking Section -->
+  <section id="booking" class="py-16 container mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12">Book a Session</h2>
+    <form action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse" method="POST" class="max-w-xl mx-auto bg-white shadow-lg rounded-lg p-8 space-y-6">
+      <div>
+        <label for="name" class="block mb-2 font-semibold">Full Name</label>
+        <input type="text" id="name" name="entry.123456" class="w-full border border-gray-300 rounded-lg p-2" required>
+      </div>
+      <div>
+        <label for="email" class="block mb-2 font-semibold">Email</label>
+        <input type="email" id="email" name="entry.654321" class="w-full border border-gray-300 rounded-lg p-2" required>
+      </div>
+      <div>
+        <label for="service" class="block mb-2 font-semibold">Service</label>
+        <select id="service" name="entry.112233" class="w-full border border-gray-300 rounded-lg p-2" required>
+          <option>Bridal Makeup</option>
+          <option>Evening Makeup</option>
+          <option>Natural / Everyday Makeup</option>
+        </select>
+      </div>
+      <div>
+        <label for="date" class="block mb-2 font-semibold">Preferred Date</label>
+        <input type="date" id="date" name="entry.445566" class="w-full border border-gray-300 rounded-lg p-2" required>
+      </div>
+      <button type="submit" class="bg-gold-500 hover:bg-gold-600 text-white px-6 py-3 rounded-full font-semibold w-full">Submit Booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-8 text-center">
+    <p>&copy; 2026 Makeup Artist. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
